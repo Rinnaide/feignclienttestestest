@@ -22,7 +22,7 @@ Esta é uma aplicação Spring Boot desenvolvida para consultar informações de
 
 **Requisição:**
 ```
-GET http://localhost:8080/cep/20020-022
+GET http://localhost:8080/cep/20020-022 
 ```
 
 **Resposta:**
@@ -33,7 +33,7 @@ GET http://localhost:8080/cep/20020-022
   "localidade": "Rio de Janeiro",
   "estado": "Rio de Janeiro"
 }
-```
+``` 
 
 ## Tecnologias Utilizadas
 
