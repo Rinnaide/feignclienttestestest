@@ -1,0 +1,18 @@
+package com.senac.feignclienttestestest_main;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CepController {
+
+    @Autowired
+    private CepClient cepClient;
+
+    @GetMapping("/cep/{cep}")
+    public CepResponse getCep(@PathVariable String cep) {
+        return cepClient.getCep(cep);
+    }
+}
